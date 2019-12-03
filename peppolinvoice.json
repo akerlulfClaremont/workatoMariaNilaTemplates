@@ -262,7 +262,7 @@
       {
         "name": "PartyTaxScheme",
         "type": "array",
-        "optional": false,
+        "optional": true,
         "properties": [
           {
             "name": "CompanyID", //custbody_sta_einvoicing_payee_vat
@@ -280,7 +280,7 @@
       },
       {
         "name": "PartyLegalEntity",
-        "type": "array",
+        "type": "object",
         "optional": false,
         "properties": [
           {
@@ -298,7 +298,7 @@
           {
             "name": "CompanyLegalForm",
             "type": "string",
-            "optional": false,
+            "optional": true,
             "control_type": "text"
           }
         ]
@@ -398,7 +398,7 @@
       {
         "name": "AddressLine",
         "type": "string",
-        "optional": false,
+        "optional": true,
         "control_type": "text"
       },
       {
@@ -714,7 +714,7 @@
   {
     "name": "AllowanceChargeList",
     "type": "array",
-    "optional": false,
+    "optional": true,
     "properties": [
       {
         "name": "schemeID_currencyID_AllowanceChargeList",
@@ -969,24 +969,24 @@
       {
         "name": "AllowanceChargeList_invoiceline",
         "type": "array",
-        "optional": false,
+        "optional": true,
         "properties": [
           {
             "name": "ChargeIndicator",
             "type": "string",
-            "optional": false,
+            "optional": true,
             "control_type": "text"
           },
           {
             "name": "AllowanceChargeReasonCode",
             "type": "string",
-            "optional": false,
+            "optional": true,
             "control_type": "text"
           },
           {
             "name": "AllowanceChargeReason",
             "type": "string",
-            "optional": false,
+            "optional": true,
             "control_type": "text"
           },
           {
