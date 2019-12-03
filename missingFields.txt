@@ -1,0 +1,79 @@
+Missing required input field Template input/Buyer reference 
+Missing required input field Template input/Order reference ID 
+Missing required input field Template input/Order reference sales order ID 
+Missing required input field Template input/Accounting supplier party/Scheme ID accounting supplier party ID 
+Missing required input field Template input/Accounting supplier party/Scheme ID party identification ID 
+Missing required input field Template input/Accounting supplier party/Endpoint 
+Missing required input field Template input/Accounting supplier party/Party identification ID 
+Missing required input field Template input/Accounting supplier party/Party name 
+Missing required input field Template input/Accounting supplier party/Street name 
+Missing required input field Template input/Accounting supplier party/Additional street name 
+Missing required input field Template input/Accounting supplier party/City name 
+Missing required input field Template input/Accounting supplier party/Postal zone 
+Missing required input field Template input/Accounting supplier party/Country subentity 
+Missing required input field Template input/Accounting supplier party/Address line 
+Missing required input field Template input/Accounting supplier party/Identification code 
+Missing required input field Template input/Accounting supplier party/Party tax scheme/Company ID 
+Missing required input field Template input/Accounting supplier party/Party tax scheme/Tax scheme 
+Missing required input field Template input/Accounting supplier party/Party legal entity/Registration name 
+Missing required input field Template input/Accounting supplier party/Party legal entity/Telephone 
+Missing required input field Template input/Accounting supplier party/Party legal entity/Company legal form 
+Missing required input field Template input/Accounting supplier party/Contact/Electronic mail 
+Missing required input field Template input/Accounting supplier party/Contact/Contact name 
+Missing required input field Template input/Accounting supplier party/Contact/Telephone 
+Missing required input field Template input/Accounting customer party/Scheme ID endpoint ID accounting customer party 
+Missing required input field Template input/Accounting customer party/Endpoint ID 
+Missing required input field Template input/Accounting customer party/Scheme ID party identification ID 
+Missing required input field Template input/Accounting customer party/Party identification ID 
+Missing required input field Template input/Accounting customer party/Party name 
+Missing required input field Template input/Accounting customer party/Street name 
+Missing required input field Template input/Accounting customer party/Additional street name 
+Missing required input field Template input/Accounting customer party/City name 
+Missing required input field Template input/Accounting customer party/Postal zone 
+Missing required input field Template input/Accounting customer party/Country subentity 
+Missing required input field Template input/Accounting customer party/Address line 
+Missing required input field Template input/Accounting customer party/Country identification code 
+Missing required input field Template input/Accounting customer party/Party tax scheme/Company ID 
+Missing required input field Template input/Accounting customer party/Party tax scheme/Tax scheme 
+Missing required input field Template input/Accounting customer party/Party legal entity/Scheme ID company ID party legal entity 
+Missing required input field Template input/Accounting customer party/Party legal entity/Contact name 
+Missing required input field Template input/Accounting customer party/Party legal entity/Telephone 
+Missing required input field Template input/Accounting customer party/Party legal entity/Electronic mail 
+Missing required input field Template input/Accounting customer party/Contact/Registration name 
+Missing required input field Template input/Accounting customer party/Contact/Company ID 
+Missing required input field Template input/Payee party/Scheme ID company ID payee party 
+Missing required input field Template input/Payee party/Scheme ID party identification payee party 
+Missing required input field Template input/Allowance charge list/Scheme ID currency ID allowance charge list 
+Missing required input field Template input/Allowance charge list/Charge indicator 
+Missing required input field Template input/Allowance charge list/Allowance charge reason code 
+Missing required input field Template input/Allowance charge list/Allowance charge reason 
+Missing required input field Template input/Allowance charge list/Multiplier factor numeric 
+Missing required input field Template input/Allowance charge list/Amount 
+Missing required input field Template input/Allowance charge list/Base amount 
+Missing required input field Template input/Allowance charge list/Tax category ID 
+Missing required input field Template input/Allowance charge list/Tax category percent 
+Missing required input field Template input/Allowance charge list/Tax scheme 
+Missing required input field Template input/Tax total list/1/Scheme ID currency ID tax total list 
+Missing required input field Template input/Tax total list/1/Tax sub total list/Tax scheme 
+Missing required input field Template input/Legal monetary total/Scheme ID currency ID legal monetary total 
+Missing required input field Template input/Legal monetary total/Payable amount 
+Missing required input field Template input/Invoice line/Scheme ID currency ID invoice line 
+Missing required input field Template input/Invoice line/Start date invoiceline 
+Missing required input field Template input/Invoice line/Line ID 
+Missing required input field Template input/Invoice line/Document reference 
+Missing required input field Template input/Invoice line/Allowance charge list invoiceline/Charge indicator 
+Missing required input field Template input/Invoice line/Allowance charge list invoiceline/Allowance charge reason code 
+Missing required input field Template input/Invoice line/Allowance charge list invoiceline/Allowance charge reason 
+Missing required input field Template input/Invoice line/Allowance charge list invoiceline/Multiplier factor numeric 
+Missing required input field Template input/Invoice line/Allowance charge list invoiceline/Scheme ID unit code invoice line 
+Missing required input field Template input/Invoice line/Allowance charge list invoiceline/Amount 
+Missing required input field Template input/Invoice line/Allowance charge list invoiceline/Base amount 
+Missing required input field Template input/Invoice line/Item/Scheme ID document reference invoice line 
+Missing required input field Template input/Invoice line/Item/Scheme ID standard item identification invoice line 
+Missing required input field Template input/Invoice line/Item/Commodity classification list/1/List version ID 
+Missing required input field Template input/Invoice line/Item/Commodity classification list/1/List ID 
+Missing required input field Template input/Invoice line/Item/Additional item property list/Additional item property 
+Missing required input field Template input/Invoice line/Item/Additional item property list/Value 
+Missing required input field Template input/Price/Allowance charge amount 
+Missing required input field Template input/Price/Currency ID price 
+Missing required input field Template input/Price/Unit code 

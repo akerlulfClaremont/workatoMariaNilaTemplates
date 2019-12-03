@@ -1,0 +1,1192 @@
+[
+  {
+    "name": "InvoiceID", 
+    "type": "number",
+    "optional": false,
+    "control_type": "number"
+  },
+  {
+    "name": "IssueDate",
+    "type": "date_time",
+    "optional": false,
+    "control_type": "date"
+  },
+  {
+    "name": "DueDate",
+    "type": "date_time",
+    "optional": true,
+    "control_type": "date"
+  },
+  {
+    "name": "InvoiceTypeCode", //det här berör recordtype invoice samt credit memo
+    "type": "number",
+    "optional": false,
+    "control_type": "number"
+  },
+  {
+    "name": "Note", //memo
+    "type": "string",
+    "optional": true,
+    "control_type": "text"
+  },
+  {
+    "name": "TaxPointDate", //trandate
+    "type": "date_time",
+    "optional": false,
+    "control_type": "date"
+  },
+  {
+    "name": "DocumentCurrencyCode", //currency
+    "type": "number",
+    "optional": false,
+    "control_type": "number"
+  },
+  {
+    "name": "TaxCurrencyCode", //currency
+    "type": "string",
+    "optional": false,
+    "control_type": "text"
+  },
+  {
+    "name": "AccountingCost", //behövs ej
+    "type": "string",
+    "optional": true,
+    "control_type": "text"
+  },
+  {
+    "name": "BuyerReference", //custbody_sta_nord_yourref
+    "type": "string",
+    "optional": false,
+    "control_type": "text"
+  },
+  {
+    "name": "InvoicePeriodStartDate", //startdate
+    "type": "date_time",
+    "optional": false,
+    "control_type": "date"
+  },
+  {
+    "name": "InvoicePeriodEndDate", //enddate
+    "type": "string",
+    "optional": false,
+    "control_type": "text"
+  },
+  {
+    "name": "OrderReferenceId",
+    "type": "integer",
+    "optional": false,
+    "control_type": "integer"
+  },
+  {
+    "name": "OrderReferenceSalesOrderId", //custbody_invoice_so_number
+    "type": "string",
+    "optional": false,
+    "control_type": "text"
+  },
+  {
+    "name": "BillingReference", //behövs ej
+    "type": "array",
+    "optional": true,
+    "properties": [
+      {
+        "name": "IssueDate",
+        "type": "date_time",
+        "optional": false,
+        "control_type": "date"
+      },
+      {
+        "name": "ID",
+        "type": "number",
+        "optional": false,
+        "control_type": "number"
+      }
+    ]
+  },
+  {
+    "name": "DespatchDocumentReference", //behövs ej
+    "type": "integer",
+    "optional": true,
+    "control_type": "integer"
+  },
+  {
+    "name": "ReceiptDocumentReference_ID", //behövs ej
+    "type": "integer",
+    "optional": true,
+    "control_type": "integer"
+  },
+  {
+    "name": "OriginatorDocumentReference_ID", //behövs ej
+    "type": "integer",
+    "optional": true,
+    "control_type": "integer"
+  },
+  {
+    "name": "ContractDocumentReference_ID", //behövs ej
+    "type": "integer",
+    "optional": true,
+    "control_type": "integer"
+  },
+  {
+    "name": "AdditionalDocumentReferenceList", //behövs ej
+    "type": "array",
+    "optional": true,
+    "properties": [
+      {
+        "name": "ProjectReference_ID",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "Attachment",
+        "type": "object",
+        "optional": true,
+        "properties": [
+          {
+            "name": "fileName",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "mimeCode",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "EmbeddedDocumentBinaryObject",
+            "type": "number",
+            "optional": false,
+            "control_type": "number"
+          }
+        ]
+      },
+      {
+        "name": "DocumentTypeCode",
+        "type": "string",
+        "optional": true,
+        "control_type": "text"
+      },
+      {
+        "name": "DocumentDescription",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "AdditionalDocumentReference_ID",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      }
+    ]
+  },
+  {
+    "name": "AccountingSupplierParty",
+    "type": "object",
+    "optional": false,
+    "properties": [
+      {
+        "name": "schemeID_AccountingSupplierPartyID",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "schemeID_PartyIdentification_ID", 
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "Endpoint", //custbody_sta_einvoicing_payee_edi
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PartyIdentification_ID", //custbody_sta_einvoicing_payee_vat
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PartyName", //custbody_sta_einvoicing_payee_name
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "StreetName", //custbody_sta_einvoicing_payee_address
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "AdditionalStreetName", //custbody_sta_einvoicing_payee_address2
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "CityName", //custbody_sta_einvoicing_payee_city
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PostalZone", //custbody_sta_einvoicing_payee_zip
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "CountrySubentity", //custbody_sta_einvoicing_payee_country
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "AddressLine",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "IdentificationCode",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PartyTaxScheme",
+        "type": "array",
+        "optional": false,
+        "properties": [
+          {
+            "name": "CompanyID", //custbody_sta_einvoicing_payee_vat
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "TaxScheme", //VAT
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          }
+        ]
+      },
+      {
+        "name": "PartyLegalEntity",
+        "type": "array",
+        "optional": false,
+        "properties": [
+          {
+            "name": "RegistrationName", //custbody_sta_einvoicing_payee_name
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "Telephone", //custbody_seller_phone
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "CompanyLegalForm",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Contact",
+        "type": "array",
+        "optional": false,
+        "properties": [
+          {
+            "name": "ElectronicMail", //custbody_invoice_company_email
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "ContactName", //salesrep
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "Telephone", //custbody_seller_phone
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "AccountingCustomerParty",
+    "type": "object",
+    "optional": false,
+    "properties": [
+      {
+        "name": "SchemeID_EndpointID_AccountingCustomerParty",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "EndpointID", //custbody_sta_einvoicing_payer_ovt
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "SchemeID_PartyIdentificationID",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PartyIdentificationID", //custbodypayerorgnumber
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PartyName", //entity
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "StreetName", //addr1
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "AdditionalStreetName", //addr2
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "CityName", //city
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PostalZone", //zip
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "CountrySubentity",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "AddressLine",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "CountryIdentificationCode", //country
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PartyTaxScheme",
+        "type": "object",
+        "optional": false,
+        "properties": [
+          {
+            "name": "CompanyID", //custbodypayervat
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "TaxScheme", //VAT
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          }
+        ]
+      },
+      {
+        "name": "PartyLegalEntity",
+        "type": "object",
+        "optional": false,
+        "properties": [
+          {
+            "name": "SchemeID_CompanyID_PartyLegalEntity",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "ContactName",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "Telephone",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "ElectronicMail", //custbody_invoice_company_email
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Contact",
+        "type": "object",
+        "optional": false,
+        "properties": [
+          {
+            "name": "RegistrationName", //entity
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "CompanyID", //custbodypayerorgnumber
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "ElectronicMail", //custbody1
+            "type": "string",
+            "optional": true,
+            "control_type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PayeeParty",
+    "type": "object",
+    "optional": false,
+    "properties": [
+      {
+        "name": "SchemeID_CompanyID_PayeeParty",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "SchemeID_PartyIdentification_PayeeParty",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "ID", //custbody_payee_bic
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PartyName", //custbody_sta_einvoicing_payee_name
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "CompanyID", //custbody_sta_einvoicing_payee_busin_id
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      }
+    ]
+  },
+  {
+    "name": "TaxRepresentativeParty", //behövs ej
+    "type": "object",
+    "optional": true,
+    "properties": [
+      {
+        "name": "PartyName",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "StreetName",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "AdditionalStreetName",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "CityName",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PostalZone",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "CountrySubentity",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "AddressLine",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "CountryCode",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PartyTaxScheme",
+        "type": "object",
+        "optional": true,
+        "properties": [
+          {
+            "name": "CompanyID",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "TaxSchemeID",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Delivery", //Behövs ej
+    "type": "object",
+    "optional": true,
+    "properties": [
+      {
+        "name": "SchemeID_DeliveryLocation_Delivery",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "ActualDeliveryDate",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "DeliveryLocation",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "StreetName",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "AdditionalStreetName",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "CityName",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PostalZone",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "CountrySubentity",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "AddressLine",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "CountryIDCode",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PartyName",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      }
+    ]
+  },
+  {
+    "name": "PaymentsMeansList", //Behövs ej
+    "type": "array",
+    "optional": true,
+    "properties": [
+      {
+        "name": "PaymentMeansCode",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PaymentID",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PayeeFinancialAccountID",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "AccountName",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "FinancialInstitutionBranchID",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "PaymentTerms",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      }
+    ]
+  },
+  {
+    "name": "AllowanceChargeList",
+    "type": "array",
+    "optional": false,
+    "properties": [
+      {
+        "name": "schemeID_currencyID_AllowanceChargeList",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "ChargeIndicator",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "AllowanceChargeReasonCode",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "AllowanceChargeReason",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "MultiplierFactorNumeric",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "Amount",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "BaseAmount",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "TaxCategoryID",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "TaxCategoryPercent",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "TaxScheme",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      }
+    ]
+  },
+  {
+    "name": "TaxTotalList",
+    "type": "array",
+    "optional": false,
+    "properties": [
+      {
+        "name": "schemeID_currencyID_TaxTotalList",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "TaxAmount", //taxtotal
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "TaxSubTotalList",
+        "type": "array",
+        "optional": true,
+        "properties": [
+          {
+            "name": "TaxableAmount", //custbody_sta_fin_subtotal1
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "TaxAmount", //custbody_sta_fin_taxamount1
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "TaxCategoryID", //taxcode
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "Percent", //taxrate1
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "TaxScheme",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "LegalMonetaryTotal",
+    "type": "object",
+    "optional": false,
+    "properties": [
+      {
+        "name": "schemeID_currencyID_LegalMonetaryTotal",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "LineExtensionAmount", //custbody_stc_amount_after_discount
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "TaxExclusiveAmount", //custbody_stc_amount_after_discount
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "TaxInclusiveAmount", //custbody_stc_total_after_discount
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "AllowanceTotalAmount",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "ChargeTotalAmount", //behövs ej
+        "type": "string",
+        "optional": true,
+        "control_type": "text"
+      },
+      {
+        "name": "PrepaidAmount", //behövs ej
+        "type": "string",
+        "optional": true,
+        "control_type": "text"
+      },
+      {
+        "name": "PayableRoundingAmount", //behövs ej
+        "type": "string",
+        "optional": true,
+        "control_type": "text"
+      },
+      {
+        "name": "PayableAmount", //amountremainingtotalbox
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      }
+    ]
+  },
+  {
+    "name": "InvoiceLine",
+    "type": "array",
+    "optional": false,
+    "properties": [
+      {
+        "name": "ID", //line
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "schemeID_currencyID_InvoiceLine",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "Note_invoiceline", //description
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "InvoicedQuantity", //quantity
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "LineExtensionAmount", //amount
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "AccountingCost_invoiceline", //behövs ej
+        "type": "string",
+        "optional": true,
+        "control_type": "text"
+      },
+      {
+        "name": "StartDate", //Behövs ej
+        "type": "string",
+        "optional": true,
+        "control_type": "text"
+      },
+      {
+        "name": "StartDate_invoiceline",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "LineID",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "DocumentReference",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "DocumentTypeCode", //130
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "AllowanceChargeList_invoiceline",
+        "type": "array",
+        "optional": false,
+        "properties": [
+          {
+            "name": "ChargeIndicator",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "AllowanceChargeReasonCode",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "AllowanceChargeReason",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "MultiplierFactorNumeric",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "schemeID_unitCode_InvoiceLine",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "Amount",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "BaseAmount",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Item",
+        "type": "object",
+        "optional": false,
+        "properties": [
+          {
+            "name": "schemeID_DocumentReference_InvoiceLine",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "schemeID_StandardItemIdentification_InvoiceLine",
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "Description", //description
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "Name", //item_display
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "BuyersItemIdentification", //custcolitemnumber
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "SellersItemIdentification", //custcolitemnumber
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "StandardItemIdentification", //custcolitemnumber
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "OriginCountryIdentificationCode", //custcolmanufactoringcountry
+            "type": "string",
+            "optional": false,
+            "control_type": "text"
+          },
+          {
+            "name": "CommodityClassificationList", 
+            "type": "array",
+            "optional": false,
+            "properties": [
+              {
+                "name": "ItemClassificationCode", //custcolitemnumber
+                "type": "string",
+                "optional": false,
+                "control_type": "text"
+              },
+              {
+                "name": "listVersionID",
+                "type": "string",
+                "optional": false,
+                "control_type": "text"
+              },
+              {
+                "name": "listId",
+                "type": "string",
+                "optional": false,
+                "control_type": "text"
+              }
+            ]
+          },
+          {
+            "name": "ClassifiedTaxCategory",
+            "type": "object",
+            "optional": false,
+            "properties": [
+              {
+                "name": "ID", //taxcode
+                "type": "string",
+                "optional": false,
+                "control_type": "text"
+              },
+              {
+                "name": "Percent", //taxrate1
+                "type": "string",
+                "optional": false,
+                "control_type": "text"
+              },
+              {
+                "name": "TaxScheme", //VAT
+                "type": "string",
+                "optional": false,
+                "control_type": "text"
+              }
+            ]
+          },
+          {
+            "name": "AdditionalItemPropertyList",
+            "type": "array",
+            "optional": false,
+            "properties": [
+              {
+                "name": "AdditionalItemProperty",
+                "type": "string",
+                "optional": false,
+                "control_type": "text"
+              },
+              {
+                "name": "Value",
+                "type": "string",
+                "optional": false,
+                "control_type": "text"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Price",
+    "type": "object",
+    "optional": false,
+    "properties": [
+      {
+        "name": "PriceAmount", //rate
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "BaseQuantity", //quantity
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "ChargeIndicator",
+        "type": "boolean",
+        "optional": false
+      },
+      {
+        "name": "AllowanceChargeAmount",
+        "type": "number",
+        "optional": false,
+        "control_type": "number"
+      },
+      {
+        "name": "BaseAmount", //amount
+        "type": "number",
+        "optional": false,
+        "control_type": "number"
+      },
+      {
+        "name": "currencyID_Price", //currency
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      },
+      {
+        "name": "unitCode",
+        "type": "string",
+        "optional": false,
+        "control_type": "text"
+      }
+    ]
+  }
+]
