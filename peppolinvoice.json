@@ -74,7 +74,7 @@
   {
     "name": "OrderReferenceId",
     "type": "integer",
-    "optional": false,
+    "optional": true,
     "control_type": "integer"
   },
   {
@@ -196,7 +196,7 @@
       {
         "name": "schemeID_PartyIdentification_ID", 
         "type": "string",
-        "optional": false,
+        "optional": true,
         "control_type": "text"
       },
       {
@@ -250,11 +250,11 @@
       {
         "name": "AddressLine",
         "type": "string",
-        "optional": false,
+        "optional": true,
         "control_type": "text"
       },
       {
-        "name": "IdentificationCode",
+        "name": "IdentificationCode", //custbody_sta_einvoicing_payee_country
         "type": "string",
         "optional": false,
         "control_type": "text"
